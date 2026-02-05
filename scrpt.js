@@ -1,14 +1,15 @@
 function login() {
   const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
   const error = document.getElementById("error");
 
-  if (email === "" || password === "") {
-    error.innerText = "Por favor completa todos los campos.";
+  if (email === "") {
+    error.innerText = "Por favor ingresa tu correo.";
     return;
   }
 
   error.innerText = "";
+
+  // Ocultar login y mostrar chat
   document.getElementById("login").classList.add("hidden");
   document.getElementById("chat").classList.remove("hidden");
 }
@@ -61,4 +62,10 @@ function responder() {
 function logout() {
   document.getElementById("chat").classList.add("hidden");
   document.getElementById("login").classList.remove("hidden");
+
+  // Limpieza opcional (recomendado)
+  document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("mensaje").value = "";
+  document.getElementById("respuesta").innerText = "";
 }
