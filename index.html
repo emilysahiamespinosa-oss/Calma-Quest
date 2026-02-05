@@ -11,9 +11,12 @@
   <div id="login" class="card">
     <h2>💗 Bienvenido a EscuchaIA</h2>
     <p>Un espacio seguro para expresarte</p>
-    <input type="email" id="email" placeholder="Correo electrónico">
+
+    <input type="email" id="email" placeholder="Correo electrónico" required>
     <input type="password" id="password" placeholder="Contraseña">
+
     <button onclick="login()">Entrar</button>
+
     <p id="error" class="error"></p>
   </div>
 
@@ -21,9 +24,13 @@
   <div id="chat" class="card hidden">
     <h2>🤖 EscuchaIA</h2>
     <p>Cuéntame cómo te sientes hoy 💬</p>
+
     <textarea id="mensaje" placeholder="Escribe cómo te sientes..."></textarea>
+
     <button onclick="responder()">Enviar</button>
+
     <div id="respuesta" class="respuesta"></div>
+
     <button class="salir" onclick="logout()">Salir</button>
   </div>
 
@@ -32,6 +39,6 @@
     Creadores: Emily Espinosa · Yorman García · Bella Vargas · Vanessa Mondragón · Sharol Cruz
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
