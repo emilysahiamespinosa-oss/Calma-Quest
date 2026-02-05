@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EscuchaIA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="login" class="card">
+    <h2>💗 Bienvenido</h2>
+    <input type="email" id="email" placeholder="Correo electrónico">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <!-- CHAT IA -->
+  <div id="chat" class="card hidden">
+    <h2>🤖 EscuchaIA</h2>
+    <p>Cuéntame cómo te sientes hoy 💬</p>
+    <textarea id="mensaje" placeholder="Escribe cómo te sientes..."></textarea>
+    <button onclick="responder()">Enviar</button>
+    <div id="respuesta" class="respuesta"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Creadores: Emily Espinosa · Yorman García · Bella Vargas · Vanessa Mondragón 
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
