@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #fce4ec, #e3f2fd);
@@ -55,6 +56,21 @@ textarea {
   background: #f3e5f5;
   padding: 10px;
   border-radius: 10px;
+  font-size: 14px;
+}
+
+.error {
+  color: #e53935;
+  font-size: 13px;
+}
+
+.salir {
+  margin-top: 10px;
+  background: #ef9a9a;
+}
+
+.salir:hover {
+  background: #e57373;
 }
 
 footer {
