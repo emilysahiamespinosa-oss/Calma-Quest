@@ -9,10 +9,12 @@
 
   <!-- LOGIN -->
   <div id="login" class="card">
-    <h2>💗 Bienvenido</h2>
+    <h2>💗 Bienvenido a EscuchaIA</h2>
+    <p>Un espacio seguro para expresarte</p>
     <input type="email" id="email" placeholder="Correo electrónico">
     <input type="password" id="password" placeholder="Contraseña">
     <button onclick="login()">Entrar</button>
+    <p id="error" class="error"></p>
   </div>
 
   <!-- CHAT IA -->
@@ -22,11 +24,12 @@
     <textarea id="mensaje" placeholder="Escribe cómo te sientes..."></textarea>
     <button onclick="responder()">Enviar</button>
     <div id="respuesta" class="respuesta"></div>
+    <button class="salir" onclick="logout()">Salir</button>
   </div>
 
   <!-- FOOTER -->
   <footer>
-    Creadores: Emily Espinosa · Yorman García · Bella Vargas · Vanessa Mondragón 
+    Creadores: Emily Espinosa · Yorman García · Bella Vargas · Vanessa Mondragón · Sharol Cruz
   </footer>
 
   <script src="script.js"></script>
